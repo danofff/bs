@@ -1,0 +1,101 @@
+﻿<Page x:Class="WpfBookShop.Pages.Users.AddUser"
+      
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfBookShop.Pages.Users"
+      mc:Ignorable="d" 
+      Title="AddUser">
+
+    <Page.Resources>
+        <Style x:Key="ForTextBox" >
+            <Setter Property="Control.Height" Value="20"/>
+        </Style>
+
+        <Style x:Key="ForStarLable" >
+            <Setter Property="Control.Foreground" Value="Red"/>
+        </Style>
+    </Page.Resources>
+    
+    <Grid Margin="5" x:Name="newUser">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0">Full Name:</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" 
+                 x:Name="lName" 
+                 Text="{Binding Path=lName}"
+               Style="{StaticResource ForTextBox}"
+                 ></TextBox>
+
+        <WrapPanel Grid.Row="1" Grid.Column="0">
+            <Label >User Name:</Label>
+            <Label Style="{StaticResource ForStarLable}">*</Label>
+        </WrapPanel>       
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="Login"  Style="{StaticResource ForTextBox}"></TextBox>
+
+        <WrapPanel Grid.Row="2" Grid.Column="0">
+            <Label >Password:</Label>
+            <Label Style="{StaticResource ForStarLable}">*</Label>
+        </WrapPanel>       
+        <PasswordBox Grid.Row="2" Grid.Column="1" x:Name="Password" Style="{StaticResource ForTextBox}"></PasswordBox>
+
+        <WrapPanel Grid.Row="3" Grid.Column="0">
+            <Label >Confirm Password:</Label>
+            <Label Style="{StaticResource ForStarLable}">*</Label>
+        </WrapPanel>       
+        <PasswordBox Grid.Row="3" Grid.Column="1" x:Name="confirmPassword" Style="{StaticResource ForTextBox}"></PasswordBox>
+
+        <Label Grid.Row="4" Grid.Column="0">Gender:</Label>
+        <Grid Grid.Row="4" Grid.Column="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <RadioButton Grid.Column="0" x:Name="GenderM" GroupName="Gender">Male</RadioButton>
+            <RadioButton Grid.Column="1" x:Name="GenderF" GroupName="Gender">Female</RadioButton>
+
+        </Grid>
+
+        <WrapPanel Grid.Row="5" Grid.Column="0">
+            <Label >E-mail Address:</Label>
+            <Label Style="{StaticResource ForStarLable}">*</Label>
+        </WrapPanel>       
+        <TextBox Grid.Row="5" Grid.Column="1" x:Name="EmailAddress"  Style="{StaticResource ForTextBox}"></TextBox>
+        
+        <Label Grid.Row="6" Grid.Column="0">Contact No:</Label>
+        <TextBox Grid.Row="6" Grid.Column="1" x:Name="ContactNo"  Style="{StaticResource ForTextBox}"></TextBox>
+        
+        <Label Grid.Row="7" Grid.Column="0">City</Label>
+        <ComboBox Grid.Row="7" Grid.Column="1" x:Name="CityId"  
+                 
+                  DisplayMemberPath="{Binding Path=CityName}"
+                  Style="{StaticResource ForTextBox}"></ComboBox>
+
+        <Label Grid.Row="8" Grid.ColumnSpan="2" x:Name="ErrMessage">TEST</Label>
+        
+        <Button Grid.Row="9" x:Name="ButtonAddUser" 
+                Grid.ColumnSpan="2" 
+                Click="ButtonAddUser_Click"
+                Height="30"
+                >Register</Button>
+
+
+    </Grid>
+</Page>

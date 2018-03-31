@@ -1,0 +1,10 @@
+C:\Users\Вершковд\Documents\Visual Studio 2015\Projects\BookShop\WpfBookShop\WpfBookShop.DAL\bin\Debug\WpfBookShop.DAL.dll.config
+C:\Users\Вершковд\Documents\Visual Studio 2015\Projects\BookShop\WpfBookShop\WpfBookShop.DAL\bin\Debug\WpfBookShop.DAL.dll
+C:\Users\Вершковд\Documents\Visual Studio 2015\Projects\BookShop\WpfBookShop\WpfBookShop.DAL\bin\Debug\WpfBookShop.DAL.pdb
+C:\Users\Вершковд\Documents\Visual Studio 2015\Projects\BookShop\WpfBookShop\WpfBookShop.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Вершковд\Documents\Visual Studio 2015\Projects\BookShop\WpfBookShop\WpfBookShop.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Вершковд\Documents\Visual Studio 2015\Projects\BookShop\WpfBookShop\WpfBookShop.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Вершковд\Documents\Visual Studio 2015\Projects\BookShop\WpfBookShop\WpfBookShop.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Вершковд\Documents\Visual Studio 2015\Projects\BookShop\WpfBookShop\WpfBookShop.DAL\obj\Debug\WpfBookShop.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Вершковд\Documents\Visual Studio 2015\Projects\BookShop\WpfBookShop\WpfBookShop.DAL\obj\Debug\WpfBookShop.DAL.dll
+C:\Users\Вершковд\Documents\Visual Studio 2015\Projects\BookShop\WpfBookShop\WpfBookShop.DAL\obj\Debug\WpfBookShop.DAL.pdb

@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfBookShop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookShop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="525">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0" x:Name="MainMenu">
+            <MenuItem Header="Home"></MenuItem>
+
+            <MenuItem Header="Пользователи" x:Name="UsersMenu" Visibility="Hidden">
+                <MenuItem Header="Добавить пользователя" 
+                          x:Name="AddUser"
+                          Click="AddUser_Click"
+                          ></MenuItem>
+                <MenuItem Header="Список пользователей" 
+                          x:Name="TableUsers"
+                          Click="TableUsers_Click"
+                          ></MenuItem>
+            </MenuItem>
+            
+        </Menu>
+
+        <Image Grid.Row="1" Source="Images\1_1.jpg" Stretch="UniformToFill" ></Image>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Frame NavigationUIVisibility="Hidden" x:Name="LeftMenuFrame" Background="AliceBlue" Grid.Column="0"></Frame>
+            <Frame NavigationUIVisibility="Hidden" x:Name="CenterFrame" Grid.Column="1"></Frame>
+        </Grid>
+    </Grid>
+</Window>

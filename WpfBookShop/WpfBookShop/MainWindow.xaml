@@ -18,7 +18,7 @@
         <Menu Grid.Row="0" x:Name="MainMenu">
             <MenuItem Header="Home"></MenuItem>
 
-            <MenuItem Header="Пользователи" x:Name="UsersMenu" Visibility="Hidden">
+            <MenuItem Header="Пользователи" x:Name="UsersMenu" Visibility="Collapsed">
                 <MenuItem Header="Добавить пользователя" 
                           x:Name="AddUser"
                           Click="AddUser_Click"
@@ -26,6 +26,16 @@
                 <MenuItem Header="Список пользователей" 
                           x:Name="TableUsers"
                           Click="TableUsers_Click"
+                          ></MenuItem>
+            </MenuItem>
+
+            <MenuItem Header="Книги">
+                <MenuItem Header="Добавить Книгу"
+                          x:Name="AddBook"
+                          Click="AddBook_Click"></MenuItem>
+                <MenuItem Header="Список книг" 
+                          x:Name="TableBooks"
+                          Click="TableBooks_Click"
                           ></MenuItem>
             </MenuItem>
             

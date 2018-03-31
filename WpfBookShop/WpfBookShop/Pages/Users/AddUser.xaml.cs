@@ -25,7 +25,7 @@ namespace WpfBookShop.Pages.Users
         public AddUser()
         {
             InitializeComponent();
-            CityId.ItemsSource = db.TableCity.Select(s =>s.CityName).ToList();
+            CityId.ItemsSource = db.TableCity.ToList();
         }
 
         private void ButtonAddUser_Click(object sender, RoutedEventArgs e)
@@ -36,8 +36,8 @@ namespace WpfBookShop.Pages.Users
             newUser.Password = Password.Password;
             newUser.CityId = 0;
 
-            var cityName = CityId.SelectedItem;
-            TableCity city = db.TableCity.FirstOrDefault(f => f.CityName == cityName);
+            TableCity city = (TableCity)CityId.SelectedItem;
+
             if(city!=null)
                 newUser.CityId = city.CityId;
             

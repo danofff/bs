@@ -25,5 +25,6 @@ namespace WpfBookShop.DAL.Modal
         public string ContactNo { get; set; }
         public int CityId { get; set; }
 
+        public string PathToPhoto { get; set; }
     }
 }

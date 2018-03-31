@@ -80,6 +80,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\Books\AddBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Books\ListBooks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Home\AccessDenied.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -106,6 +114,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Books\AddBook.xaml.cs">
+      <DependentUpon>AddBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Books\ListBooks.xaml.cs">
+      <DependentUpon>ListBooks.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Home\AccessDenied.xaml.cs">
       <DependentUpon>AccessDenied.xaml</DependentUpon>
     </Compile>

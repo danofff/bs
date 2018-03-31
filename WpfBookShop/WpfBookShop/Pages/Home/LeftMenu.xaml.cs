@@ -48,17 +48,19 @@ namespace WpfBookShop.Pages.Home
 
                 if (MainWindow.user != null && MainWindow.user.UserId == 1)
                 {
-                  
-
                     MainWindow.uMenu.Visibility = Visibility.Visible;
-
                     SineInButton.Content = "Sine Out";
                 }
-                else if (MainWindow.user == null)
+                else if (MainWindow.user != null)
+                {
+                    MainWindow.cf.Source = new Uri(@"Pages\Home\HomeCentralPage.xaml",
+                                 UriKind.RelativeOrAbsolute);
+                }
+                else
                 {
                     MainWindow.cf.Source =
-                                      new Uri(@"Pages\Users\AccessDenied.xaml",
-                                      UriKind.RelativeOrAbsolute);
+                                     new Uri(@"Pages\Users\AccessDenied.xaml",
+                                     UriKind.RelativeOrAbsolute);
                 }
             }
         }

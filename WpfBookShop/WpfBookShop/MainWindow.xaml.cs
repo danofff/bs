@@ -54,5 +54,17 @@ namespace WpfBookShop
             MainWindow.cf.Source = new Uri(@"Pages\Users\ListUsers.xaml",
                                    UriKind.RelativeOrAbsolute);
         }
+
+        private void AddBook_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.cf.Source = new Uri(@"Pages\Books\AddBook.xaml",
+                                   UriKind.RelativeOrAbsolute);
+        }
+
+        private void TableBooks_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.cf.Source = new Uri(@"Pages\Books\ListBooks.xaml",
+                                   UriKind.RelativeOrAbsolute);
+        }
     }
 }

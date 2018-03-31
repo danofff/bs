@@ -18,8 +18,18 @@
             <ListView.View>
                 <GridView>
                     <GridView.Columns>
-                        <GridViewColumn Header="UserId" 
-                                        DisplayMemberBinding="{Binding Path=UserId}"></GridViewColumn>
+                        <GridViewColumn>
+                            
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Image Source="{Binding Path=PathToPhoto}" Height="32" Width="32"></Image>
+                                    </Grid>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                            
+                        </GridViewColumn>
+                        
                         <GridViewColumn Header="Login"
                                         DisplayMemberBinding="{Binding Path=Login}"></GridViewColumn>
                         <GridViewColumn Header="lName"
@@ -29,6 +39,6 @@
                     </GridView.Columns>
                 </GridView>
             </ListView.View>
-        </ListView>        
+        </ListView>
     </Grid>
 </Page>

@@ -84,9 +84,9 @@
         
         <Label Grid.Row="7" Grid.Column="0">City</Label>
         <ComboBox Grid.Row="7" Grid.Column="1" x:Name="CityId"  
-                 
-                  DisplayMemberPath="{Binding Path=CityName}"
-                  Style="{StaticResource ForTextBox}"></ComboBox>
+                  DisplayMemberPath="CityName"
+                  Style="{StaticResource ForTextBox}">
+        </ComboBox>
 
         <Label Grid.Row="8" Grid.ColumnSpan="2" x:Name="ErrMessage">TEST</Label>
         
